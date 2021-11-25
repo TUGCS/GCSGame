@@ -7,17 +7,9 @@
             "actions": [
                 {
                     "name": "Accelerate",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "e0479910-4057-4a98-8191-8cc322dd0b6f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Brake",
-                    "type": "Button",
-                    "id": "b40367cf-4d01-4495-89e4-d4e24bb142c6",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Analog",
                     "processors": "",
                     "interactions": ""
                 },
@@ -40,48 +32,70 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "442308df-81d3-4204-98ef-d5a6ed476314",
-                    "path": "<Keyboard>/w",
+                    "name": "1D Axis",
+                    "id": "2ad346c8-2d5d-4c37-8e87-7524ee2ad039",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "",
                     "action": "Accelerate",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "3d200cc2-45d2-4fe0-b450-dd86d71e252f",
+                    "name": "negative",
+                    "id": "86730792-64de-4750-bc7c-44ef3cce399c",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "eb8b3070-24d9-4e8b-b3e8-eade66cfa8e0",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Accelerate",
                     "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "WS",
+                    "id": "9322e2f9-c265-40d0-9f39-b2c31c32af06",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "4cf08d39-c538-4694-9b33-9dec1430bbb2",
+                    "name": "negative",
+                    "id": "d0de167d-50b4-4623-b848-42f44e7f70d7",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Brake",
+                    "action": "Accelerate",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "9f98158f-cdeb-4f03-9eae-e525cd949cab",
-                    "path": "<Gamepad>/leftTrigger",
+                    "name": "positive",
+                    "id": "30564510-65c1-4579-b50b-fa833b81a3fe",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Brake",
+                    "groups": "Keyboard",
+                    "action": "Accelerate",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
